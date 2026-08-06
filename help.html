@@ -6,7 +6,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MatchEstate | Help Center</title>
+<title>Help Center | MatchEstate</title>
+
+<meta name="description" content="Help Center for MatchEstate Google Workspace Add-on.">
+
+<link rel="icon" href="assets/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -14,65 +23,68 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-background:#f5f7fb;
-color:#1b2b44;
-}
-
-header{
-background:#0b2f63;
-color:white;
-text-align:center;
-padding:35px;
-}
-
-header h1{
-font-size:36px;
-}
-
-header p{
-margin-top:10px;
-color:#d9e8ff;
-}
-
-.container{
-max-width:900px;
-margin:50px auto;
-background:white;
-padding:40px;
-border-radius:14px;
-box-shadow:0 8px 25px rgba(0,0,0,.08);
-}
-
-h2{
-color:#0b2f63;
-margin-bottom:30px;
-}
-
-.faq{
-margin-bottom:30px;
-padding:20px;
-background:#f8fbff;
-border-left:5px solid #13b5c8;
-}
-
-.faq h3{
-margin-bottom:10px;
-color:#0b2f63;
-}
-
-.faq p{
+font-family:Inter,sans-serif;
+background:#f4f7fb;
+color:#1f2937;
 line-height:1.8;
 }
 
-footer{
+header{
+background:#0f62fe;
+color:white;
+padding:60px 20px;
 text-align:center;
-padding:40px;
-font-size:14px;
-color:#666;
+}
+
+header img{
+width:90px;
+margin-bottom:15px;
+}
+
+header h1{
+margin-bottom:10px;
+}
+
+main{
+max-width:950px;
+margin:40px auto;
+padding:0 20px;
+}
+
+section{
+background:white;
+border-radius:16px;
+padding:30px;
+margin-bottom:24px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+h2{
+color:#0f62fe;
+margin-bottom:20px;
+}
+
+h3{
+color:#0f62fe;
+margin-bottom:10px;
+}
+
+footer{
+background:#111827;
+color:white;
+text-align:center;
+padding:40px 20px;
+margin-top:40px;
+}
+
+footer a{
+color:white;
+text-decoration:none;
+margin:0 12px;
+font-weight:600;
 }
 
 </style>
@@ -83,71 +95,161 @@ color:#666;
 
 <header>
 
-<h1>MatchEstate</h1>
+<img src="assets/logo.png" alt="MatchEstate Logo">
 
-<p>Help Center</p>
+<h1>Help Center</h1>
+
+<p>
+
+Frequently Asked Questions
+
+</p>
 
 </header>
 
-<div class="container">
+<main>
 
-<h2>Frequently Asked Questions</h2>
+<section>
 
-<div class="faq">
-
-<h3>How do I install MatchEstate?</h3>
+<h2>How do I install MatchEstate?</h2>
 
 <p>
-Open Google Sheets, then go to <strong>Extensions → MatchEstate</strong>.
+
+Install MatchEstate from Google Workspace Marketplace and open it from Google Sheets.
+
 </p>
 
-</div>
+</section>
 
-<div class="faq">
+<section>
 
-<h3>How do I start using AI Matching?</h3>
+<h2>How do I start using AI Matching?</h2>
 
 <p>
-Complete the First Setup process, enter your Gemini API key, and start AI Property Matching.
+
+Complete the initial setup, authorize your Google account, enter your personal Google Gemini API Key, and begin matching customer requirements with your property portfolio.
+
 </p>
 
-</div>
+</section>
 
-<div class="faq">
+<section>
 
-<h3>Where can I get a Gemini API Key?</h3>
+<h2>Where can I get a Gemini API Key?</h2>
 
 <p>
-You can create your API key through Google AI Studio.
+
+You can generate your own API key from Google AI Studio.
+
 </p>
-
-</div>
-
-<div class="faq">
-
-<h3>My matching process failed. What should I do?</h3>
 
 <p>
-Verify that your API key is valid and that your internet connection is available. If the issue continues, please visit the Support page.
+
+<a href="https://aistudio.google.com/" target="_blank" rel="noopener">
+
+Open Google AI Studio
+
+</a>
+
 </p>
 
-</div>
+</section>
 
-<div class="faq">
+<section>
 
-<h3>Where can I report a bug?</h3>
+<h2>My matching process failed</h2>
 
 <p>
-Please submit bug reports through the MatchEstate GitHub Issues page.
+
+Please verify that:
+
 </p>
 
-</div>
+<ul>
 
-</div>
+<li>Your Gemini API Key is valid.</li>
+
+<li>Your internet connection is working.</li>
+
+<li>Your Google account has authorized MatchEstate.</li>
+
+</ul>
+
+<p>
+
+If the problem continues, please contact our support team.
+
+</p>
+
+</section>
+
+<section>
+
+<h2>Need more help?</h2>
+
+<p>
+
+If you have any technical questions, installation problems, or would like to report unexpected behavior, please visit our Support page.
+
+</p>
+
+<p>
+
+<a href="support.html">
+
+Go to Support Center
+
+</a>
+
+</p>
+
+</section>
+
+</main>
 
 <footer>
 
+<h2>
+
+MatchEstate
+
+</h2>
+
+<br>
+
+<p>
+
+AI-powered Google Workspace Add-on for Real Estate Professionals
+
+</p>
+
+<br>
+
+<p>
+
+<a href="index.html">Home</a>
+
+|
+
+<a href="privacy.html">Privacy Policy</a>
+
+|
+
+<a href="terms.html">Terms of Service</a>
+
+|
+
+<a href="support.html">Support</a>
+
+</p>
+
+<br>
+
+<p>
+
 © 2026 MatchEstate. All rights reserved.
+
+</p>
 
 </footer>
 
