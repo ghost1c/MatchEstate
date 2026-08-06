@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MatchEstate | AI-Powered Real Estate Matching for Google Workspace</title>
+
+<meta name="description"
+content="MatchEstate is an AI-powered Google Workspace Add-on that helps real estate professionals match customers with property portfolios using Google Sheets and Google Gemini AI.">
+
+<meta name="keywords"
+content="MatchEstate, Google Workspace, Google Sheets, Gemini AI, Real Estate, Property Matching">
+
+<link rel="icon" href="assets/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Inter,sans-serif;
+background:#f6f8fc;
+color:#1f2937;
+line-height:1.8;
+}
+
+header{
+background:linear-gradient(135deg,#0f62fe,#4d83ff);
+color:white;
+padding:90px 20px;
+text-align:center;
+}
+
+header img{
+width:120px;
+margin-bottom:25px;
+}
+
+header h1{
+font-size:58px;
+font-weight:800;
+margin-bottom:18px;
+}
+
+header p{
+max-width:850px;
+margin:auto;
+font-size:20px;
+}
+
+.button{
+display:inline-block;
+margin-top:35px;
+padding:15px 32px;
+background:white;
+color:#0f62fe;
+font-weight:700;
+text-decoration:none;
+border-radius:12px;
+transition:.2s;
+}
+
+.button:hover{
+background:#edf4ff;
+}
+
+.container{
+max-width:1180px;
+margin:auto;
+padding:80px 20px;
+}
+
+.section-title{
+font-size:40px;
+text-align:center;
+margin-bottom:20px;
+}
+
+.section-text{
+font-size:18px;
+max-width:900px;
+margin:auto;
+text-align:center;
+margin-bottom:60px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.card h3{
+color:#0f62fe;
+margin-bottom:15px;
+}
+
+.highlight{
+background:#edf4ff;
+padding:70px 20px;
+}
+
+.highlight h2{
+text-align:center;
+font-size:38px;
+margin-bottom:20px;
+}
+
+.highlight p{
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:18px;
+}
+
+ul{
+max-width:900px;
+margin:30px auto;
+padding-left:25px;
+}
+
+li{
+margin-bottom:15px;
+}
+
+footer{
+background:#111827;
+color:white;
+padding:60px 20px;
+text-align:center;
+}
+
+footer a{
+color:white;
+text-decoration:none;
+margin:0 12px;
+font-weight:600;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="assets/logo.png" alt="MatchEstate Logo">
+
+<h1>MatchEstate</h1>
+
+<p>
+
+AI-powered Google Workspace Add-on that helps real estate professionals match customers with the right properties using Google Sheets and Google Gemini AI.
+
+</p>
+
+<a class="button" href="support.html">
+
+Contact Support
+
+</a>
+
+</header>
+
+<section class="container">
+
+<h2 class="section-title">
+
+About MatchEstate
+
+</h2>
+
+<p class="section-text">
+
+MatchEstate is an AI-powered Google Workspace Add-on developed specifically for real estate professionals.
+
+The application enables agents and agencies to manage property portfolios in Google Sheets, compare customer requirements with available listings, calculate AI-powered compatibility scores using Google's Gemini AI, and generate professional property matching reports.
+
+MatchEstate helps reduce manual work, improve customer satisfaction, and simplify the entire property matching workflow.
+
+</p>
+
+</section>
+
+<section class="container">
+
+<h2 class="section-title">
+
+Main Features
+
+</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>AI Property Matching</h3>
+
+<p>
+
+Automatically compare customer requirements with your property portfolio using Google Gemini AI.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Google Sheets Integration</h3>
+
+<p>
+
+Manage your complete property portfolio directly inside Google Sheets without exporting data.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Google Drive Reports</h3>
+
+<p>
+
+Generate professional AI-assisted reports and save them directly to your own Google Drive.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Professional Analysis</h3>
+
+<p>
+
+Receive ranked property recommendations together with detailed AI-generated explanations.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+  <section class="highlight">
+
+<h2>
+
+How MatchEstate Works
+
+</h2>
+
+<p>
+
+MatchEstate simplifies the property matching process in four easy steps.
+
+</p>
+
+</section>
+
+<section class="container">
+
+<div class="grid">
+
+<div class="card">
+
+<h3>1. Build Your Portfolio</h3>
+
+<p>
+
+Create and maintain your property portfolio directly in Google Sheets.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>2. Enter Customer Requirements</h3>
+
+<p>
+
+Specify your customer's preferred location, budget, property type, size, and other requirements.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>3. AI Analysis</h3>
+
+<p>
+
+Google Gemini AI analyzes customer requirements and compares them with your property portfolio to calculate compatibility scores.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>4. Review Results</h3>
+
+<p>
+
+Receive ranked property recommendations together with AI-generated explanations and downloadable reports.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="highlight">
+
+<h2>
+
+Why MatchEstate Requests Google Permissions
+
+</h2>
+
+<p>
+
+MatchEstate requests only the minimum Google Workspace permissions required to provide its core functionality.
+
+</p>
+
+<ul>
+
+<li>Access only the Google Sheets files that you explicitly authorize.</li>
+
+<li>Create AI-powered property matching reports.</li>
+
+<li>Save generated reports to your own Google Drive when requested.</li>
+
+<li>Authenticate users securely using Google OAuth.</li>
+
+<li>Never access files without your explicit permission.</li>
+
+<li>Users can revoke access at any time through their Google Account settings.</li>
+
+<li>MatchEstate never sells Google user data or uses it for advertising.</li>
+
+</ul>
+
+</section>
+
+<section class="container">
+
+<h2 class="section-title">
+
+Privacy & Security
+
+</h2>
+
+<p class="section-text">
+
+MatchEstate follows the Google API Services User Data Policy, including the Limited Use requirements.
+
+Only the minimum Google Workspace permissions required for the requested functionality are used.
+
+Google Workspace data is processed only to compare customer requirements with property portfolios and generate reports requested by the user.
+
+MatchEstate does not use Google Workspace API data to develop, improve, or train generalized artificial intelligence or machine learning models.
+
+</p>
+
+</section>
+
+<section class="container">
+
+<h2 class="section-title">
+
+Frequently Asked Questions
+
+</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>
+
+Does MatchEstate store my Google Workspace data?
+
+</h3>
+
+<p>
+
+No. MatchEstate processes only the information required to provide the functionality you request.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+Can MatchEstate access all of my Google Drive files?
+
+</h3>
+
+<p>
+
+No. MatchEstate accesses only the Google Sheets and Google Drive files that you explicitly authorize.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+Which AI model does MatchEstate use?
+
+</h3>
+
+<p>
+
+MatchEstate uses Google's Gemini AI models to analyze customer requirements, compare property portfolios, and generate AI-assisted reports.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+Who is MatchEstate designed for?
+
+</h3>
+
+<p>
+
+MatchEstate is designed for real estate agents, brokers, agencies, and property professionals.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="highlight">
+
+<h2>
+
+Contact
+
+</h2>
+
+<p>
+
+Need help with MatchEstate?
+
+</p>
+
+<p style="margin-top:20px;">
+
+For installation assistance, technical support, or general questions, please visit our Support Center.
+
+</p>
+
+<p style="margin-top:30px;">
+
+<a class="button" href="support.html">
+
+Go to Support Center
+
+</a>
+
+</p>
+
+<p style="margin-top:30px;">
+
+Business Hours: Monday–Friday
+
+<br>
+
+Typical Response Time: 1–2 business days
+
+</p>
+
+</section>
+
+<footer>
+
+<h2>
+
+MatchEstate
+
+</h2>
+
+<br>
+
+<p>
+
+AI-powered Google Workspace Add-on for Real Estate Professionals
+
+</p>
+
+<br>
+
+<p>
+
+<a href="index.html">Home</a>
+
+|
+
+<a href="privacy.html">Privacy Policy</a>
+
+|
+
+<a href="terms.html">Terms of Service</a>
+
+|
+
+<a href="support.html">Support</a>
+
+|
+
+<a href="help.html">Help Center</a>
+
+|
+
+<a href="admin.html">Administrator Guide</a>
+
+|
+
+<a href="report.html">Report an Issue</a>
+
+|
+
+<a href="draft.html">Draft Tester Opt-Out</a>
+
+</p>
+
+<br>
+
+<p>
+
+© 2026 MatchEstate. All rights reserved.
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
