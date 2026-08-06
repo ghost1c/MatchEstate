@@ -1,66 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MatchEstate | Administrator Configuration</title>
+
+<title>Workspace Administrator Guide | MatchEstate</title>
+
+<meta name="description" content="Administrator guide for deploying MatchEstate in Google Workspace.">
+
+<link rel="icon" href="assets/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,Helvetica,sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    background:#f5f7fb;
-    color:#1b2b44;
+font-family:Inter,sans-serif;
+background:#f4f7fb;
+color:#1f2937;
+line-height:1.8;
 }
 
 header{
-    background:#0b2f63;
-    color:white;
-    text-align:center;
-    padding:35px;
+background:#0f62fe;
+color:white;
+padding:60px 20px;
+text-align:center;
+}
+
+header img{
+width:90px;
+margin-bottom:15px;
 }
 
 header h1{
-    font-size:36px;
+margin-bottom:10px;
 }
 
-header p{
-    margin-top:10px;
-    color:#d9e8ff;
+main{
+max-width:950px;
+margin:40px auto;
+padding:0 20px;
 }
 
-.container{
-    max-width:900px;
-    margin:50px auto;
-    background:white;
-    padding:40px;
-    border-radius:14px;
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
+section{
+background:white;
+border-radius:16px;
+padding:30px;
+margin-bottom:24px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
 h2{
-    color:#0b2f63;
-    margin-bottom:20px;
+color:#0f62fe;
+margin-bottom:15px;
 }
 
-.info{
-    background:#f8fbff;
-    border-left:5px solid #13b5c8;
-    padding:20px;
-    margin-top:20px;
+ul{
+margin-left:20px;
+margin-top:10px;
+}
+
+li{
+margin-bottom:10px;
 }
 
 footer{
-    text-align:center;
-    padding:40px;
-    color:#666;
-    font-size:14px;
+background:#111827;
+color:white;
+text-align:center;
+padding:40px 20px;
+margin-top:40px;
+}
+
+footer a{
+color:white;
+text-decoration:none;
+margin:0 12px;
+font-weight:600;
 }
 
 </style>
@@ -71,43 +99,174 @@ footer{
 
 <header>
 
-<h1>MatchEstate</h1>
+<img src="assets/logo.png" alt="MatchEstate Logo">
 
-<p>Administrator Configuration</p>
+<h1>Workspace Administrator Guide</h1>
+
+<p>
+
+Information for Google Workspace administrators
+
+</p>
 
 </header>
 
-<div class="container">
+<main>
 
-<h2>Workspace Administrator Information</h2>
+<section>
 
-<div class="info">
-
-<p>
-MatchEstate does not require any additional administrator configuration.
-</p>
-
-<br>
+<h2>Overview</h2>
 
 <p>
-After installation, each user can configure their own Gemini API key directly from Google Sheets using the MatchEstate setup wizard.
+
+MatchEstate is an AI-powered Google Workspace Add-on designed for real estate professionals.
+
+The application allows users to compare customer requirements with property portfolios stored in Google Sheets using Google's Gemini AI.
+
 </p>
 
-<br>
+</section>
+
+<section>
+
+<h2>Administrator Configuration</h2>
 
 <p>
-No domain-wide settings or administrator actions are required.
+
+MatchEstate does not require any domain-wide installation or special administrator configuration.
+
+Each user authorizes the application individually using their own Google Account.
+
 </p>
 
-</div>
+</section>
 
-</div>
+<section>
+
+<h2>User Configuration</h2>
+
+<p>
+
+After installation, every user completes a simple one-time setup.
+
+</p>
+
+<ul>
+
+<li>Authorize the application with Google OAuth.</li>
+
+<li>Open MatchEstate inside Google Sheets.</li>
+
+<li>Enter a personal Google Gemini API Key.</li>
+
+<li>Begin using AI-powered property matching.</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Permissions</h2>
+
+<p>
+
+MatchEstate requests only the Google permissions required to provide its functionality.
+
+The application accesses Google Sheets and Google Drive only after explicit user authorization.
+
+No administrator approval is required unless your organization restricts third-party Google Workspace applications.
+
+</p>
+
+</section>
+
+<section>
+
+<h2>Security</h2>
+
+<p>
+
+Each user's data remains private within their own Google Account.
+
+MatchEstate does not require administrator privileges and does not access organizational data beyond the permissions granted by the individual user.
+
+</p>
+
+</section>
+
+<section>
+
+<h2>Need Help?</h2>
+
+<p>
+
+If you have questions regarding installation or deployment, please contact our support team.
+
+</p>
+
+<p>
+
+<strong>Email:</strong>
+
+<a href="mailto:tahsinaktasbjk@gmail.com">
+
+tahsinaktasbjk@gmail.com
+
+</a>
+
+</p>
+
+</section>
+
+</main>
 
 <footer>
 
+<h2>
+
+MatchEstate
+
+</h2>
+
+<br>
+
+<p>
+
+AI-powered Google Workspace Add-on for Real Estate Professionals
+
+</p>
+
+<br>
+
+<p>
+
+<a href="index.html">Home</a>
+
+|
+
+<a href="privacy.html">Privacy Policy</a>
+
+|
+
+<a href="terms.html">Terms of Service</a>
+
+|
+
+<a href="support.html">Support</a>
+
+</p>
+
+<br>
+
+<p>
+
 © 2026 MatchEstate. All rights reserved.
+
+</p>
 
 </footer>
 
 </body>
+
 </html>
